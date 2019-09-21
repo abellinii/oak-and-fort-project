@@ -11,10 +11,6 @@ Project Website: [Oak + Fort](https://frozen-harbor-01686.herokuapp.com/)
 - [react-scripts](https://www.npmjs.com/package/react-scripts)
 
 
-**Build**
-- [Webpack](https://www.npmjs.com/package/webpack)
-
-
 
 # Infrastructure
 
@@ -22,9 +18,10 @@ Project Website: [Oak + Fort](https://frozen-harbor-01686.herokuapp.com/)
 
 
 # Build locally
-
-- CD into root directory where the project is intalled.
-- Type npm start and press enter
+- Open command line interface
+- Type: git clone https://github.com/abellinii/oak-and-fort-project.git
+- Type: CD into root directory where the project is intalled.
+- Type: npm start and press enter
 - Open up the browser and navigate to localhost:3000 (If port 3000 is in use another port will be confirmed)
 
 
