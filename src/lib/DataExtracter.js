@@ -67,4 +67,4 @@ class DataExtracter{
 }
 
 
-export default dataExtracter
+export default DataExtracter
