@@ -1,22 +1,35 @@
-.App {
-  text-align: center;
+
+#root{
+  position:relative;
 }
 
-.App-logo {
-  height: 40vmin;
+.app {
+ text-align: center;
+  text-transform: uppercase;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom:40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main {
+  margin:10%;
+  max-height: calc(100vh - 200px);
+  overflow: scroll;
 }
 
-.App-link {
-  color: #09d3ac;
+.main button:focus, .main button:active {
+  background-color: #FFFDE7;
+  color: #000000;
+}
+
+.entryButton{
+   margin-top:20vh;
+}
+
+.sumItems{
+    border-radius: 5px;
+    width: 250px;
+    height: 50px;
+    margin: 0 auto ;
+    margin-top: 2vh;
 }

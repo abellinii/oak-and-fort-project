@@ -1,68 +1,83 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Oak and Fort assignment
 
-## Available Scripts
 
-In the project directory, you can run:
+Website [Oak + Fort](https://www.npmjs.com/package/@material-ui/core)
 
-### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Dependencies:**
+- [@material-ui/core](https://www.npmjs.com/package/@material-ui/core)
+- [react](https://www.npmjs.com/package/react)
+- [papaparse](https://www.npmjs.com/package/papaparse)
+- [react-scripts](https://www.npmjs.com/package/react-scripts)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
 
-### `npm test`
+**Build**
+- [Webpack](https://www.npmjs.com/package/webpack)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Infrastructure
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- Hosted on Heroku at  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Build locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- CD into root directory where the project is intalled.
+- Type npm start and press enter
+- Open up the browser and navigate to localhost:3000 (If port 3000 is in use another port will be confirmed)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Objective
 
-## Learn More
+Coding Exercise
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Part One:
+The ‘items.csv’ file contains a typical file you may come across while on the job which needs
+to be parsed. Each line in the file represents an item, and its respective merchandise
+hierarchy (or class).
+The file contains both parent and child item SKUs. The child item is the item that comes
+after the semi-colon (:) delimiter.
+Parent Item - BA-1981-118-W
+Child Item - BA-1981-118-W : BA-1981-118-W-BLACK-OS
+Write a program that takes the file ‘items.csv’ and counts the number of items in each
+merchandise hierarchy (class). The program should write the results to a new file which can
+be utilized in part two.
+Example, if the items merchandise hierarchy is “OF China Accessories : Bags : Backpack”
+then the quantity of Backpack should increase by 1. The result should be an output file that
+looks something like:
+Backpack: 64
+Bag: 54
+Shoulder Bag: 12
+etc.…
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*The program only needs the total quantities regardless of the sub-class being unique. In
+an example, if 2 items were to have the merchandise hierarchies:
+OF China Women : Top : Dress
+OF Korea Women : Top : Dress
+Then the result would be the combined total:
+Dress: 2
 
-### Code Splitting
+*The program should also count how many items do not have a merchandise hierarchy
+assigned (empty)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-### Analyzing the Bundle Size
+Part Two
+Create a simple front-end webpage which loads the output file generated in part one. Each
+subclass (Backpack, Bag, Shoulder Bag, etc...) should be represented as a button on the
+page. When a user clicks the button, the webpage should display the total quantity of items
+in that class. The webpage should also display the number of items that are missing a
+merchandise hierarchy.
+There should also be a button that says, “Sum Items” and when clicked, the webpage will
+report the sum of all items in each merchandise hierarchy combined.
+Additional Information
+Your submission will be assessed based on efficiency, simplicity, reusability and best
+practice.
+Part two should be user-friendly and aesthetically pleasing.
+Use any programming language you would like.
+Be prepared to explain and defend your code.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ 
+ For more information on Oak + Fort refer [Here](https://ca.oakandfort.com/)
+ 
