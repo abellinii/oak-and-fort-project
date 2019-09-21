@@ -5,7 +5,7 @@ var Papa = require('papaparse')
 
 
 
-module.exports = class DataExtracter{
+class DataExtracter{
 	
 	constructor(config){
 		this.filename=config.file;
@@ -65,3 +65,6 @@ module.exports = class DataExtracter{
 		}
 
 }
+
+
+export default dataExtracter
