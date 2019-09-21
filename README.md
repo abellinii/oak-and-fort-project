@@ -1,4 +1,4 @@
-# Oak and Fort assignment
+# Oak and Fort Assignment
 
 
 Project Website: [Oak + Fort](https://frozen-harbor-01686.herokuapp.com/)
