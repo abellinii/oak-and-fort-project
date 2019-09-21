@@ -18,7 +18,7 @@ Project Website: [Oak + Fort](https://frozen-harbor-01686.herokuapp.com/)
 
 # Infrastructure
 
-- Hosted on Heroku at  
+- Hosted on Heroku at  https://frozen-harbor-01686.herokuapp.com/
 
 
 # Build locally
